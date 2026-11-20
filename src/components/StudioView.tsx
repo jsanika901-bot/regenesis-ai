@@ -172,7 +172,7 @@ export function StudioView({
     }
   };
 
-  };
+
 
   const handleSimulateProduction = () => {
     if (!blueprint || productionCommitted) return;

@@ -1,0 +1,6 @@
+{
+  "name": "RE:GENESIS AI",
+  "description": "Circular manufacturing and AI material recovery ecosystem. Nothing Is Waste. Everything Has a Second Life.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

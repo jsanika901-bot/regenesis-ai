@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Outfit", system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --color-obsidian: #060B09;
+  --color-forest: #0A2218;
+  --color-forest-elevated: #0E2E21;
+  --color-champagne: #D4AF37;
+  --color-ivory: #F7F5EE;
+  --color-ivory-muted: #B6B1A2;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: #060B09;
+    color: #F7F5EE;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.glass-panel {
+  background: linear-gradient(145deg, rgba(10, 34, 24, 0.72), rgba(6, 11, 9, 0.88));
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.glass-surface {
+  background: rgba(10, 34, 24, 0.45);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
